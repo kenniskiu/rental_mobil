@@ -39,7 +39,4 @@ class RentalController extends Controller
         ->get();
         return view('rental.index',compact('results'));
     }
-    public function fetch(Request $request){
-        return "test";
-    }
 }

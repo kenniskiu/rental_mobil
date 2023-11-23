@@ -22,5 +22,5 @@ Route::get('/manajemen/edit/{id}', [App\Http\Controllers\ManagementController::c
 Route::post('/manajemen/update/{id}', [App\Http\Controllers\ManagementController::class, 'update'])->name('update');
 Route::post('/manajemen/destroy/{id}', [App\Http\Controllers\ManagementController::class, 'destroy'])->name('destroy');
 Route::get('/manajemen/{id}', [App\Http\Controllers\ManagementController::class, 'index'])->name('index');
-Route::get('/rental/fetch', [App\Http\Controllers\ManagementController::class, 'fetch'])->name('fetch');
+Route::get('/rental/fetch', [App\Http\Controllers\RentalController::class, 'fetch'])->name('fetch');
 Route::get('/rental/{id}', [App\Http\Controllers\RentalController::class, 'index'])->name('index');
